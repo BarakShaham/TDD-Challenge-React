@@ -16,13 +16,6 @@ beforeEach(async () => {
   booksModel.addBook = jest.fn().mockImplementation(() => {
     return Promise.resolve(true);
   });
-  // booksModel.addBook = jest.fn(
-  //   (user: string, { author, name }: { author: string; name: string }) => {
-  //     const hasMissingParam = !author || !name || !user;
-  //     if (hasMissingParam) return Promise.resolve(false);
-  //     return Promise.resolve(true);
-  //   }
-  // );
 });
 
 describe("Books actions", () => {
